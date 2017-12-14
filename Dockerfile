@@ -1,7 +1,7 @@
 FROM docker:17.11.0-ce-dind
 
 ARG digdag_version=0.9.21
-ARG embulk_version=0.8.9
+ARG embulk_version=0.8.39
 
 ADD https://dl.digdag.io/digdag-${digdag_version} /usr/local/bin/digdag
 ADD https://dl.bintray.com/embulk/maven/embulk-${embulk_version}.jar /usr/local/bin/embulk
