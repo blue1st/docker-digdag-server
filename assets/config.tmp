@@ -1,0 +1,12 @@
+database.type=${DATABASE_TYPE}
+database.user=${DATABASE_USER}
+database.password=${DATABSE_PASSWORD}
+database.host=${DATABASE_HOST}
+database.port=${DATABASE_PORT}
+database.database=${DATABASE_DATABASE}
+database.maximumPoolSize=${DATABASE_MAXIMUMPOOLSIZE}
+
+client.http.endpoint=${CLIENT_HTTP_ENDPOINT}
+
+secrets.mail.host=${SECRETS_MAIL_HOST}
+secrets.mail.port=${SECRETS_MAIL_PORT}
