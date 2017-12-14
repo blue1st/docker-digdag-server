@@ -18,4 +18,4 @@ COPY assets/entrypoint.sh /usr/local/bin/
 ENV DATABASE_TYPE=memory
 
 ENTRYPOINT ["entrypoint.sh"]
-CMD ["digdag", "server", "-c", "/root/.config/digdag/config", "-b", "0.0.0.0"]
+CMD ["digdag", "server", "-c", "/root/.config/digdag/config", "-b", "0.0.0.0", "-O", "/var/tmp"]

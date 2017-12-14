@@ -1,0 +1,10 @@
+timezone: Asia/Tokyo
+
++use_docker:
+  _export:
+    docker:
+      image: ubuntu:latest
+  sh>: ls
+
++use_embulk:
+  sh>: embulk --version
