@@ -1,12 +1,53 @@
-database.type=${DATABASE_TYPE}
-database.user=${DATABASE_USER}
-database.password=${DATABSE_PASSWORD}
-database.host=${DATABASE_HOST}
-database.port=${DATABASE_PORT}
-database.database=${DATABASE_DATABASE}
-database.maximumPoolSize=${DATABASE_MAXIMUMPOOLSIZE}
+client.http.endpoint = ${CLIENT_HTTP_ENDPOINT}
+client.http.headers.KEY = ${CLIENT_HTTP_HEADERS_KEY}
 
-client.http.endpoint=${CLIENT_HTTP_ENDPOINT}
+server.bind = ${SERVER_BIND}
+server.port = ${SERVER_PORT}
+server.admin.bind = ${SERVER_ADMIN_BIND}
+server.admin.port = ${SERVER_ADMIN_PORT}
+server.access-log.path = ${SERVER_ACCESS_LOG_PATH}
+server.access-log.pattern = ${SERVER_ACCESS_LOG_PATTERN}
+server.http.io-threads = ${SERVER_HTTP_IO_THREADS}
+server.http.worker-threads = ${SERVER_HTTP_WORKER_THREADS}
+server.http.no-request-timeout = ${SERVER_HTTP_NO_REQUEST_TIMEOUT}
+server.http.request-parse-timeout = ${SERVER_HTTP_REQUEST_PARSE_TIMEOUT}
+server.http.io-idle-timeout = ${SERVER_HTTP_IO_IDLE_TIMEOUT}
+server.http.enable-http2 = ${SERVER_HTTP_ENABLE_HTTP2}
+server.http.headers.KEY = ${SERVER_HTTP_HEADERS_KEY}
+server.jmx.port = ${SERVER_JMX_PORT}
 
-secrets.mail.host=${SECRETS_MAIL_HOST}
-secrets.mail.port=${SECRETS_MAIL_PORT}
+database.type = ${DATABASE_TYPE}
+database.user = ${DATABASE_USER}
+database.password = ${DATABASE_PASSWORD}
+database.host = ${DATABASE_HOST}
+database.port = ${DATABASE_PORT}
+database.database = ${DATABASE_DATABASE}
+database.loginTimeout = ${DATABASE_LOGINTIMEOUT}
+database.socketTimeout = ${DATABASE_SOCKETTIMEOUT}
+database.ssl = ${DATABASE_SSL}
+database.connectionTimeout = ${DATABASE_CONNECTIONTIMEOUT}
+database.idleTimeout = ${DATABASE_IDLETIMEOUT}
+database.validationTimeout = ${DATABASE_VALIDATIONTIMEOUT}
+database.maximumPoolSize = ${DATABASE_MAXIMUMPOOLSIZE}
+
+archive.type = ${ARCHIVE_TYPE}
+archive.s3.endpoint = ${ARCHIVE_S3_ENDPOINT}
+archive.s3.bucket = ${ARCHIVE_S3_BUCKET}
+archive.s3.path = ${ARCHIVE_S3_PATH}
+archive.s3.credentials.access-key-id = ${ARCHIVE_S3_CREDENTIALS_ACCESS_KEY_ID}
+archive.s3.credentials.secret-access-key = ${ARCHIVE_S3_CREDENTIALS_SECRET_ACCESS_KEY}
+archive.s3.path-style-access = ${ARCHIVE_S3_PATH_STYLE_ACCESS}
+
+log-server.type = ${LOG_SERVER_TYPE}
+log-server.s3.endpoint = ${LOG_SERVER_S3_ENDPOINT}
+log-server.s3.bucket = ${LOG_SERVER_S3_BUCKET}
+log-server.s3.path = ${LOG_SERVER_S3_PATH}
+log-server.s3.direct_download = ${LOG_SERVER_S3_DIRECT_DOWNLOAD}
+log-server.s3.credentials.access-key-id = ${LOG_SERVER_S3_CREDENTIALS_ACCESS_KEY_ID}
+log-server.s3.credentials.secret-access-key = ${LOG_SERVER_S3_CREDENTIALS_SECRET_ACCESS_KEY}
+log-server.s3.path-style-access = ${LOG_SERVER_S3_PATH_STYLE_ACCESS}
+
+digdag.secret-encryption-key = ${DIGDAG_SECRET_ENCRYPTION_KEY}
+
+executor.task_ttl = ${EXECUTOR_TASK_TTL}
+executor.attempt_ttl = ${EXECUTOR_ATTEMPT_TTL}

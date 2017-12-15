@@ -78,16 +78,3 @@ embulk 0.8.39
 ## Optional Settings
 
 [/assets/config.tmp](./assets/config.tmp)
-
-|Key|Desc|
-|:---|:---|
-|DATABASE_TYPE|(default: memory)|
-|DATABASE_HOST||
-|DATABASE_PORT||
-|DATABASE_DATABASE||
-|DATABASE_USER||
-|DATABSE_PASSWORD||
-|DATABASE_MAXIMUMPOOLSIZE||
-|CLIENT_HTTP_ENDPOINT||
-|SECRETS_MAIL_HOST||
-|SECRETS_MAIL_PORT||
