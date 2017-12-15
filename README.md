@@ -3,8 +3,8 @@
 ## Usage
 
 ```bash
-$ docker run -d --privileged -p 65432:65432 -v /var/tmp:/var/tmp  blue1st/digdag-server
-$ digdag version -e localhost:65432
+$ docker run -d --privileged -p 80:80 -v /var/tmp:/var/tmp  blue1st/digdag-server
+$ digdag version -e localhost:80
 2017-12-14 12:15:13 +0900: Digdag v0.9.21
 Client version: 0.9.21
 Server version: 0.9.21
@@ -12,7 +12,7 @@ Server version: 0.9.21
 
 ```bash
 $ cd sample_project
-$ digdag push sample -e localhost:65432
+$ digdag push sample -e localhost:80
 2017-12-14 14:32:53 +0900: Digdag v0.9.21
 Creating .digdag/tmp/archive-7397887424985167401.tar.gz...
   Archiving sample_workflow.dig
@@ -27,7 +27,7 @@ Uploaded:
   revision updated at: 2017-12-14T05:32:56Z
 
 Use `digdag workflows` to show all workflows.
-$ digdag start sample sample_workflow --session now -e localhost:65432
+$ digdag start sample sample_workflow --session now -e localhost:80
 2017-12-14 14:33:54 +0900: Digdag v0.9.21
 Started a session attempt:
   session id: 1
