@@ -8,9 +8,10 @@ ADD https://dl.bintray.com/embulk/maven/embulk-${embulk_version}.jar /usr/local/
 
 RUN apk --update --no-cache add nodejs openjdk8 jruby gettext tzdata&&\
 	chmod +x /usr/local/bin/digdag &&\
-	chmod +x /usr/local/bin/embulk
+	chmod +x /usr/local/bin/embulk &&\
+	mkdir -p /root/.config/digdag/
 
-COPY assets/config.tmp /tmp/
+COPY assets/config.tmp /root/.config/digdag/
 COPY assets/digdag-entrypoint.sh /usr/local/bin/
 COPY assets/entrypoint.sh /usr/local/bin/
 
