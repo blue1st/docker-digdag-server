@@ -6,7 +6,8 @@ ARG embulk_version=0.8.39
 ADD https://dl.digdag.io/digdag-${digdag_version} /usr/local/bin/digdag
 ADD https://dl.bintray.com/embulk/maven/embulk-${embulk_version}.jar /usr/local/bin/embulk
 
-RUN apk --update --no-cache add nodejs openjdk8 gettext tzdata&&\
+RUN apk --update --no-cache add nodejs openjdk8 jruby gettext tzdata&&\
+	rm /tmp/* &&\
 	chmod +x /usr/local/bin/digdag &&\
 	mkdir -p /digdag/logs/ &&\
 	chmod +x /usr/local/bin/embulk
